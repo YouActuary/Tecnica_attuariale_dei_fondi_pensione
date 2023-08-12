@@ -1,0 +1,478 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \\documentclass\{article\}\
+\\usepackage[T1]\{fontenc\}\
+\\usepackage[utf8]\{inputenc\}\
+\\usepackage\{geometry\}\
+\
+\
+\
+\\usepackage\{tgbonum\}\
+% \\usepackage\{lipsum\}\
+% \\usepackage\{natbib\}\
+\\usepackage\{graphicx\}\
+\\usepackage\{analysis_orax\}\
+\\usepackage\{booktabs\}\
+\\usepackage[table,xcdraw]\{xcolor\}\
+\\usepackage\{caption\}\
+\\usepackage\{hyperref\}\
+%------------------Document----------------------------\
+\\begin\{document\}\
+\
+%-------------------------TitlePage------------------------\
+%\\begin\{titlepage\}\
+%\\end\{titlepage\}\
+\
+%-------------------------Content------------------------\
+\
+\\title\{Simboli di  TAFP\}\
+\\maketitle\
+\
+%\\tableofcontents\
+\
+%\\section\{Premessa\} I presenti appunti sono tratti dalle dispense del prof. Marco Zecchin, "Appunti delle lezioni di tecnica attuariale delle assicurazioni sociali" con alcune integrazioni e rielaborazioni personali o svolte durante le lezioni. \\\\ \\noindent Qui di seguito puoi scaricare il file zippato col codice Latex di questi appunti (Github repository)\\url\{https://github.com/ottarub98/YouActuary/tree/master/Fondi\\%20pensione\}.\
+\
+%==========================\
+%CAPITOLO 1\
+%==========================\
+\\section\{Capitolo 1:  Generalit\'e0\}\
+\
+\
+%==========================\
+%CAPITOLO 2\
+%==========================\
+\\section\{Capitolo 2. Modelli a pi\'f9 cause di eliminazione\}\
+\\begin\{itemize\}\
+\\item \\fcolorbox\{green\}\{yellow\}\{\\(\\mathrm\{x\}\\)\} Et\'e0 del soggetto\
+\\item \\fcolorbox\{green\}\{yellow\}\{\\(\\mathrm\{T\}\\)\} Anni di vita: dalla nascita fino al decesso. Valori compresi fra zero e omega \
+\\item \\fcolorbox\{green\}\{yellow\}\{\\(\\mathrm\{\\omega\}\\)\} Et\'e0 estrema. Il numero di anni che nessun individuo della continuit\'e0 pu\'f2 raggiungere \
+\\item \\fcolorbox\{green\}\{yellow\}\{\\(\\mathrm\{G\}(x)=\\operatorname\{Pr\}(\\mathrm\{T\} \\leq x)\\)\} Funzione di ripartizione di te (attenzione che  la variabile aleatoria \'e8 T.\
+\\item \\fcolorbox\{green\}\{yellow\}\{\\(\\mathrm\{S\}(x)=\\operatorname\{Pr\}(\\mathrm\{T\} > x)\\)\} Funzione di sopravvivenza di T.\
+\\end\{itemize\}\
+\
+\\begin\{itemize\}\
+\\item \\fcolorbox\{green\}\{yellow\}\{\\(_t \\mathrm\{q\}_\{x\}'^\{(\\mu)\}=\\operatorname\{Pr\}(x<T \\leq x+t | T>x)\\)\} la probabilit\'e0 che un generico individuo che \'e8 nella  collettivit\'e0 all\'92et\'e0 x, venga eliminato dalla collettivit\'e0 nell\'92intervallo (x,x +t]\
+\\item \\fcolorbox\{green\}\{yellow\}\{\\(_t\\mathrm\{p\}_\{x\}^\{\\prime(\\mu)\}=\\operatorname\{Pr\}(T>x+t | T>x)\\)\} la probabilit\'e0 che un generico individuo che \'e8 nella  collettivit\'e0 all'et\'e0 x, sia nella collettivit\'e0 all'et\'e0 x + t\
+\\item \\fcolorbox\{green\}\{yellow\}\{\\(_t\\mathrm\{p'\}_\{x\}^\{\\left(\\alpha_\{j\}\\right)\}=\\operatorname\{Pr\}\\left(T>x+t,\\left(C=\\alpha_\{j\}\\right) | T>x\\right)\\)\} la probabilit\'e0 che un generico individuo che \'e8 nella  collettivit\'e0 all'et\'e0 x, sia nella collettivit\'e0 all'et\'e0 x + t \
+\\end\{itemize\}\
+\
+\\begin\{itemize\}\
+    \\item  \\fcolorbox\{green\}\{yellow\}\{\\(\\ell(0)\\)\} il numero, certo, di individui presenti inizialmente nella collettivit\'e0;\
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(\\tilde\{\\ell\}(\\mathrm\{x\})=\\tilde\{\\ell\}(\\mathrm\{x\})=\\displaystyle \\displaystyle  \\displaystyle \\sum_\{r=1\}^\{\\ell(0)\}\\left|\\mathrm\{T\}_\{(\\mathrm\{r\})\}>\\mathrm\{x\}\\right|\\)\}\
+la variabile aleatoria che fornisce il numero di quanti fra gli \\(\\ell(0)\\) individui sono ancora nella collettivit\'e0 all'et\'e0 x\
+\\end\{itemize\}\
+\
+\\begin\{itemize\}\
+    \\item  \\fcolorbox\{green\}\{yellow\}\{\\(\{\\mathrm\{r\}\}\\)\} indica l'individuo r-esimo della collettivit\'e0\
+    \\item  \\fcolorbox\{green\}\{yellow\}\{\\(\\mathrm\{T\}_\{(\\mathrm\{r\})\}\\)\} la variabile aleatoria che indica la durata di appartenenza alla collettivit\'e0, a partire dall'et\'e0 0 , dell' individuo r-esimo della collettivit\'e0, con \\(\\mathrm\{r\}=1,2, \\ldots, \\ell(0); \\)\
+\\end\{itemize\}\
+\
+\
+\
+\\begin\{itemize\}\
+    \\item \\fcolorbox\{green\}\{yellow\}\{$\\mathrm\{q\}_\{\\mathrm\{x\}\}^\{(\\mathrm\{\\mu\})\}$\}$=  _\{1\}\\mathrm\{q\}_\{\\mathrm\{x\}\}^\{(\\mathrm\{\\mu\})\}$\
+    \\item  \\fcolorbox\{green\}\{yellow\}\{\\(\\mathrm\{d\}_\{\\mathrm\{x\}\}^\{(\\mu)\}\\)\} \'e8 il numero medio degli eliminati fra le et\'e0 \\(\\mathrm\{x\}\\) e \\(\\mathrm\{x\}+1\\) risulta \\(\\mathrm\{d\}_\{\\mathrm\{x\}\}^\{(\\mu)\}=\\ell(\\mathrm\{x\})-\\ell(\\mathrm\{x\}+1)\\)\\(=\\mathrm\{q\}_\{\\mathrm\{x\}\}^\{\\prime(\\mu)\} \\ell(\\mathrm\{x\})\\). \
+\\end\{itemize\}\
+\
+ \\begin\{itemize\}\
+     \\item \\fcolorbox\{green\}\{yellow\}\{ $n$\}  Numero di cause di eliminazione\
+     \\item \\fcolorbox\{green\}\{yellow\}\{$\\alpha$\} Ogni alfa \'e8 una possibile causa di eliminazione (per tutti).\
+     \\item \\fcolorbox\{green\}\{yellow\}\{$C$\} Numero aleatorio. E\'92 la causa di uscita(cio\'e9 ogni sua determinazione rappresenta una causa di uscita).\
+     \\item \\fcolorbox\{green\}\{yellow\}\{$T$\} Numero aleatorio. Durata di permanenza nella collettivit\'e0 dalla et\'e0 0.\
+     \\item \\fcolorbox\{green\}\{yellow\}\{\\( (T,C)\\)\} Coppia aleatoria.\
+     \\item \\fcolorbox\{green\}\{yellow\}\{\\(\\mathrm\{G\}_\{j\}(x)=P\\left(T \\leq x,\\left(C=\\alpha_\{j\}\\right)\\right)\\)\} Funzione di ripartizione congiunta della coppia aleatoria, riferita alla causa di uscita j.\
+ \\end\{itemize\}\
+ \
+ \\begin\{itemize\}\
+ \\item \\fcolorbox\{green\}\{yellow\}\{\\(_t\\mathrm\{q\}_\{x\}^\{\\left(\\alpha_\{j\}\\right)\}=\\operatorname\{Pr\}\\left(x<T \\leq x+t,\\left(C=\\alpha_\{j\}\\right) | T>x\\right)\\) \}Probabilit\'e0 che un soggetto esca dalla collettivit\'e0 per \\textbf\{una causa\} \\(\{j\},\\) fra le et\'e0 \\(\{x\}\\) e \\(\{x\}+\{t\}\\) supponendo sia vivo all'et\'e0 \
+ \\item \\fcolorbox\{green\}\{yellow\}\{\\(_t\\mathrm\{q\}_\{x\}^\{(\\underline\{\\alpha\})\}=\\operatorname\{Pr\} (x<T \\leq x+t | T>x)\\)\}  Probabilit\'e0 che un soggetto esca dalla collettivit\'e0 per qualsiasi causa, fra le et\'e0 x e x+t supponendo sia vivo all\'92et\'e0 x\
+\\item \\fcolorbox\{green\}\{yellow\}\{\\(_\{t\}\{\\mathrm\{p\}\}_\{\{x\}\}^\{(\\underline\{\\alpha\})\}= \\operatorname\{Pr\}\\\{\{T\}>\{x\}+\{t\} | \{T\}>x\\\} \\)\} Probabilit\'e0 che un individuo rimanga nella collettivit\'e0... eccetera\
+\\end\{itemize\}\
+\
+ \\begin\{itemize\}\
+    \\item  \\fcolorbox\{green\}\{yellow\}\{\\(\\mathrm\{a\} \\alpha_\{\\mathrm\{j\}\}(\\mathrm\{x\})= \\displaystyle \\lim _\{\\Delta \\mathrm\{x\} \\rightarrow 0\} \\displaystyle \\frac\{_\{\\Delta \\mathrm\{x\}\}\\mathrm\{q\}_\{\\mathrm\{x\}\}^\{\\left(\\alpha_\{\\mathrm\{i\}\}\\right)\}\}\{\\Delta \\mathrm\{x\}\}\\)\} Intensit\'e0 di eliminazione per la causa di uscita $\\alpha_j$. (valuto l'intensit\'e0 di uscita per una causa fra le molte)\
+\\end\{itemize\}\
+\
+\\begin\{itemize\}\
+\\item \\fcolorbox\{green\}\{yellow\}\{$_\\mathrm\{t\}\\mathrm\{d\}_\{\\mathrm\{x\}\}^\{\\left(\\alpha_\{\\mathrm\{j\}\}\\right)\}$\} il numero medio di eliminati per la causa \uc0\u945  nell\'92intervallo di et\'e0 (x, x+t]\
+\\end\{itemize\}\
+\\subsection\{4 Probabilit\'e0 relative ed assolute.\}\
+\\begin\{itemize\}\
+\\item \\fcolorbox\{green\}\{yellow\}\{\\(_\{t\}\{\\mathrm\{p\}\}_\{\{x\}\}^\{(\\underline\{\\alpha\})\} \\)\} \\textbf\{Probabilit\'e0 assoluta\} o \\textbf\{indipendente\} o \\textbf\{pura\} di sopravvivenza in una collettivit\'e0 soggetta a $n$ cause di eliminazione.\
+\\item \\fcolorbox\{green\}\{yellow\}\{ \\(_\{t\}\{\\mathrm\{q\}\}_\{\{x\}\}^\{(\\underline\{\\alpha\})\} \\)\} \\textbf\{Probabilit\'e0 assoluta\} o \\textbf\{indipendente\} o \\textbf\{pura\} di eliminazione in una collettivit\'e0 soggetta a n cause di eliminazione.\
+\\item \\fcolorbox\{green\}\{yellow\}\{ \\(_t\\mathrm\{q'\}_\{x\}^\{\\left(\\alpha_\{j\}\\right)\} \\)\} \\textbf\{Probabilit\'e0 assoluta\}  o \\textbf\{indipendente\} o \\textbf\{pura\} di eliminazione in una collettivit\'e0 soggetta alla sola causa di eliminazione j. \
+\\item \\fcolorbox\{green\}\{yellow\}\{ \\(_t\\mathrm\{p'\}_\{x\}^\{\\left(\\alpha_\{j\}\\right)\} \\)\} \\textbf\{Probabilit\'e0 assoluta\} o \\textbf\{indipendente\} o \\textbf\{pura\} di sopravvivenza in una collettivit\'e0 soggetta alla sola causa di eliminazione j. \
+\\item \\fcolorbox\{green\}\{yellow\}\{ \\(_t\\mathrm\{p\}_\{x\}^\{\\left(\\alpha_\{j\}\\right)\} \\)\} \\textbf\{Probabilit\'e0 relativa\} o \\textbf\{ dipendente\} di sopravvivenza in una collettivit\'e0 soggetta a n cause di eliminazione.\
+\\item \\fcolorbox\{green\}\{yellow\}\{\\(_t\\mathrm\{q\}_\{x\}^\{\\left(\\alpha_\{j\}\\right)\} \\)\} \\textbf\{Probabilit\'e0 relativa\} o \\textbf\{ dipendente\} di eliminazione in una collettivit\'e0 soggetta a n cause di eliminazione.\
+\\end\{itemize\}\
+\
+%==========================\
+%CAPITOLO 3\
+%==========================\
+\
+\\section\{Capitolo 3. Collettivit\'e0 suddivisa in gruppi\}\
+\
+\\begin\{itemize\}\
+    \\item \\fcolorbox\{green\}\{yellow\}\{$\\omega_\{\\mathrm\{i\}\}$\} la prima et\'e0 che nessun individuo pu\'f2 raggiungere nel gruppo i, per \\(\\mathrm\{i\}=1,2, \\ldots, \\mathrm\{n\}:\\) quindi  \\(\\omega_\{\\mathrm\{i\}\}-1\\) \'e8 la massima et\'e0 raggiungibile nel gruppo i.\
+    \\item \\fcolorbox\{green\}\{yellow\}\{ \\(\\alpha\\)\} l'et\'e0 minima di appartenenza a ciascun gruppo, che supponiamo sia la stessa per tutti i gruppi (\'e8 la semplice la generalizzazione al caso in cui queste et\'e0 non sono tutte uguali) ; allora \\(\\alpha \\leq \\omega_\{\\mathrm\{i\}\}-1,\\) per ogni i.\
+    \\item \\fcolorbox\{green\}\{yellow\}\{ \\(\\mathrm\{x\} \\)\} l'et\'e0 d'ingresso in un gruppo; per un individuo che appartenga al gruppo i \'e8 \\(\\alpha \\leq \\mathrm\{x\} \\leq \\omega_\{\\mathrm\{i\}\}-1\\)\
+    \\item  \\fcolorbox\{green\}\{yellow\}\{$t$\} l\'92antidurata di appartenenza ad un gruppo.\
+\\end\{itemize\}\
+\
+\\begin\{itemize\}\
+    \\item  \\fcolorbox\{green\}\{yellow\}\{\\(\\mathrm\{q\}_\{[\\mathrm\{x\}]+\\mathrm\{t\}\}^\{\\mathrm\{ij\}\} \\)\} la probabilit\'e0 che l'individuo passi nel gruppo j all'et\'e0 \\(\\mathrm\{x\}+\\mathrm\{t\}+1\\)\
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(\\mathrm\{p\}_\{[\\mathrm\{x\}]+\\mathrm\{t\}\}^\{\\mathrm\{i\}\} \\)\} \\textbf\{Probabilit\'e0 di permanenza in un gruppo\}. E' la probabilit\'e0 che l'individuo rimanga nel gruppo i almeno fino all'et\'e0 \\(\\mathrm\{x\}+\\mathrm\{t\}+1\\). (occhio solo i all'esponente).\
+\\end\{itemize\}\
+\
+\\begin\{itemize\}\
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(_\{\\mathrm\{u\} /\}\\mathrm\{q\}_\{[\\mathrm\{x\}]+\\mathrm\{t\}\}^\{\\mathrm\{ij\}\}\\)\} la probabilit\'e0 che un individuo che \'e8 entrato nel gruppo i all\'92et\'e0 x provenendo da un altro gruppo e vi \'e8 rimasto fino all\'92et\'e0 x + t, rimanga nel gruppo i per altri u anni, ovvero fino all\'92et\'e0 x + t + u,e passi nel gruppo j all\'92et\'e0 x + t + u + 1.\\\\\
+    \
+    Per \\(u=0\\) risulta \\(_\{0 /\} \\mathrm\{q\}_\{[\\mathrm\{x\}]+\\mathrm\{t\}\}^\{\\mathrm\{ij\}\}=\\mathrm\{q\}_\{[\\mathrm\{x\}]+\\mathrm\{t\}\}^\{\\mathrm\{ij\}\}\\)\
+\\end\{itemize\}\
+\
+\\begin\{itemize\}\
+    \\item \\fcolorbox\{green\}\{yellow\}\{ \\(_\\mathrm\{u\}\\mathrm\{p\}_\{[\\mathrm\{x\}]+\\mathrm\{t\}\}^\{\\mathrm\{i\}\}\\)\} la probabilit\'e0 che un individuo che \'e8 entrato nel gruppo i all\'92et\'e0 x provenendo da un altro gruppo e vi \'e8 rimasto fino all\'92et\'e0 x + t, rimanga ancora nel gruppo i almeno fino all\'92et\'e0 x+t+u.\\\\\
+    \
+    Per \\(u=0\\) risulta \\(\\quad_\{0\} p_\{[x]+t\}^\{i\}=1\\)\
+    \\end\{itemize\}\
+    \
+    \\begin\{itemize\}\
+    \\item \\fcolorbox\{green\}\{yellow\}\{ \\(\\ell^\{\\mathrm\{i\}(0)\}(\\mathrm\{x\}, \\mathrm\{t\})\\)\} il numero di individui di et\'e0 x+t che sono nel gruppo i all\'92epoca 0, con et\'e0 x d\'92ingresso nel gruppo i e antidurata t.\\\\\
+    Sono noti i numeri \\(\\ell^\{\\mathrm\{i\}(0)\}(\\mathrm\{x\}, \\mathrm\{t\})\\) per \\(\\mathrm\{i\}=1,2, \\ldots, \\mathrm\{n\},\\) ed ogni possibile \\(\\mathrm\{x\}\\) e \\(\\mathrm\{t\}\\) (quindi nel rispetto delle\
+limitazioni inferiori e superiori delle et\'e0 di appartenenza al gruppo i).\
+\\end\{itemize\}\
+\
+    \
+\
+\\begin\{itemize\}\
+    \\item \\fcolorbox\{green\}\{yellow\}\{ \\(\\tilde\{\\ell\}^\{\\mathrm\{i\}(\\mathrm\{m\})\}(\\mathrm\{x\}, \\mathrm\{t\})\\)\} al tempo 0, \'e8 una variabile aleatoria che  esprime il numero di individui di et\'e0 x + t che ad un\'92epoca m (> 0) saranno nel gruppo i, con x et\'e0 d\'92ingresso nel gruppo e t antidurata\
+    \\item \\(\\mathrm\{E\}\\left(\\widetilde\{l\}^\{i(m)\}(x, t)\\right)\\)= \\fcolorbox\{green\}\{yellow\}\{ \\(\{\\ell\}^\{\\mathrm\{i\}(\\mathrm\{m\})\}(\\mathrm\{x\}, \\mathrm\{t\})\\)\}\
+    speranza matematica della variabile aleatoria (\\textbf\{sia per collettivit\'e0 chiusa che aperta?\}\
+\\end\{itemize\}\
+\
+\\begin\{itemize\}\
+\\item \\fcolorbox\{green\}\{yellow\}\{\\(\\tilde\{\\lambda\}_\{\{x\}\}^\{\\mathrm\{i\}(\\mathrm\{m\}-\\mathrm\{t\})\}\\)\} il numero aleatorio degli individui che entrano nel gruppo i all\'92epoca m \uc0\u8722  t con et\'e0 x provenendo da altro gruppo\
+\\item \\fcolorbox\{green\}\{yellow\}\{\\(\\lambda_\{x\}^\{i(m-t)\}\\)\}\\(=E\\left(\\widetilde\{\\lambda\}_\{x\}^\{i(m-t)\}\\right)\\) la sua speranza matematica.\\\\\
+Per il suo significato, \'e8 definito per x > \uc0\u945  (ricordiamo che la collettivit\'e0 \'e8 chiusa) e quindi x \u8722  \u945  > 0.\
+\\end\{itemize\}\
+\
+\
+\\begin\{itemize\}\
+    \\item \\fcolorbox\{green\}\{yellow\}\{ \\(\\lambda^\{\\mathrm\{i\}(\\mathrm\{j\})(\\mathrm\{m\})\}(\\mathrm\{x\}-\\mathrm\{\\tau\}, \\mathrm\{\\tau\})\\)\}, con \\(0<\\mathrm\{\\tau\} \\leq \\mathrm\{x\}-\\alpha\\)  numero medio di individui di et\'e0 x che all\'92epoca m sono nel gruppo i provenendo dal gruppo j, nel quale erano entrati all\'92et\'e0 x \uc0\u8722  $\\tau$ e vi erano rimasti per $\\tau$ \u8722  1 anni (fino all\'92epoca m \u8722  1), risulta:\
+    $$\\lambda^\{\\mathrm\{i\}(\\mathrm\{j\})(\\mathrm\{m\})\}(\\mathrm\{x\}-\\mathrm\{\\tau\}, \\mathrm\{\\tau\})=\\ell^\{\\mathrm\{j\}(\\mathrm\{m\}-1)\}(\\mathrm\{x\}-\\mathrm\{\\tau\}, \\mathrm\{\\tau\}-1) \\mathrm\{q\}_\{[\\mathrm\{x\}-\\mathrm\{\\tau\}]+\\mathrm\{r\}-1\}^\{\\mathrm\{ji\}\}$$\
+\\end\{itemize\}\
+\
+\\begin\{itemize\}\
+    \\item  \\fcolorbox\{green\}\{yellow\}\{ \\(\\lambda^\{\\mathrm\{i\}(\\mathrm\{m\})\}(\\mathrm\{x\}-\\tau, \\tau)\\)\} il numero medio di individui di et\'e0 x che all'epoca m sono nel gruppo i provenendo da qualsiasi gruppo, nel quale erano entrati all'et\'e0 \\(\\mathrm\{x\}-\\mathrm\{r\}\\) e vi erano rimasti per \\(\{\\tau\}-1\\)   anni (fino all'epoca  $\\mathrm\{m\}-1)$\
+\\end\{itemize\}    \
+\
+\\paragraph\{2.3 Vediamo il caso di una collettivit\'e0 aperta.\}\
+\\begin\{itemize\}\
+    \\item \\fcolorbox\{green\}\{yellow\}\{ \\(v_\{\\mathrm\{x\}\}^\{\\mathrm\{i\}(\\mathrm\{m\})\}\\)\} il numero (certo) dei nuovi ingressi (cio\'e8 ingressi non dovuti a passaggi di gruppo) di et\'e0 x nel gruppo i all'epoca m.\
+\\end\{itemize\}\
+\
+\\begin\{itemize\}\
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(_\{(1)\}\{\\ell(m)\}(x, t)\\)\} numero di individui che provengono dalla collettivit\'e0 iniziale (cio\'e8 collettivit\'e0 presente all'epoca 0)\
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(_\{(2)\}\{\\ell(m)\}(x, t)\\)\}  numero di individui che provengono da interessi successivi all'epoca 0\
+\\end\{itemize\}\
+\
+%==========================\
+%CAPITOLO 4\
+%==========================\
+\\section\{Capitolo 4. Lo schema I.V.S.\}\
+\\begin\{itemize\}\
+    \\item [Gruppo 1]: gruppo degli attivi.\
+    \\item [Gruppo 2]: gruppo dei pensionati di invalidit\'e0.\
+    \\item [Gruppo 3]: gruppo dei pensionati di vecchiaia.\
+    \\item [Gruppo 4]: gruppo dei pensionati per altre cause.\
+    \\item[Gruppo 5]: gruppo dei pensionati indiretti (o \\textbf\{nuclei superstiti di attivo\}).\\\\\
+    L\'92uscita da un nucleo superstite di un suo componente pu\'f2 verificarsi non solo per morte ma anche perch\'e9 sono venute meno le condizioni che danno diritto a far parte del nucleo stesso.\
+    \\item[Gruppo 6]: gruppo dei pensionati di reversibilit\'e0 (\\textbf\{nuclei superstiti di pensionato\}).\\\\\
+    L\'92uscita da un nucleo superstite di un suo componente pu\'f2 verificarsi non solo per morte ma anche perch\'e9 sono venute meno le condizioni che danno diritto a far parte del nucleo stesso\
+    \\item [Gruppo 7]:  gruppo degli eliminati definitivamente.\
+\\end\{itemize\}\
+\
+\\noindent\
+\\textbf\{1.2 Transizioni fra i gruppi\}\
+\\begin\{figure\}[htb]\
+\\centering\
+\\includegraphics[scale=.5]\{figures/Schema_IVS.png\}\
+\\caption\{Grafo in cui i nodi rappresentano i gruppi e gli archi indicano le transizioni possibili\}\
+\\end\{figure\}\
+\
+\\subsection\{2. I dati.\}\
+\
+\\begin\{itemize\}\
+    \\item  \\fcolorbox\{green\}\{yellow\}\{$\\alpha$\}   l'et\'e0 minima di ingresso nel gruppo 1 degli attivi; \} \
+    \\item \\fcolorbox\{green\}\{yellow\}\{$\\xi$\} \\textbf\{et\'e0 di vecchiaia\} la prima et\'e0 ($> \\alpha$) che nessun individuo pu\'f2 avere nel gruppo degli attivi. L\'92et\'e0 di vecchiaia \uc0\u958  in questo capitolo sar\'e0 intesa come l\'92et\'e0 entro la quale ogni attivo passa nel gruppo dei pensionati di vecchiaia.\
+    \\item \\fcolorbox\{green\}\{yellow\}\{$\\mathrm\{x\}$\}   l'et\'e0 d'ingresso nel gruppo degli attivi $\\alpha \\leq \\mathrm\{x\} \\leq \\xi-1)$ (salvo diversa indicazione)\
+    \\item \\fcolorbox\{green\}\{yellow\}\{t\}  l'anzianit\'e0 di assicurazione, cio\'e8 il numero di anni di appartenenza al gruppo 1 per gli individui entrati nel gruppo degli attivi all'et\'e0 x valgono le limitazioni$ 0 \\leq t  \\leq \\xi-\\mathrm\{x\}$ \
+    \\item \\fcolorbox\{green\}\{yellow\}\{$\\omega_\{\\mathrm\{k\}\}$\}   per $k = 2, 3, 4,$ la prima et\'e0 che nessun individuo del gruppo k di pensionati pu\'f2 raggiungere restando nel gruppo.\
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(\{\\tau\}\\)\} l\'92anzianit\'e0 di pensionamento di pensionati diretti o indiretti\
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(\\eta\\)\} l\'92anzianit\'e0 di pensionamento dei pensionati di reversibilit\'e0.\
+    \\end\{itemize\}\
+    \
+        \\begin\{itemize\}\
+      \\item \\fcolorbox\{green\}\{yellow\}\{\\textit\{dante causa\}\}: solo per i gruppi 5 e 6, \\textbf\{non chiaro se \'e8 il nucleo superstite di attivo o pensionato ad essere il dante causa del gruppo successivo (ma credo di si)\}\
+        \\item  \\fcolorbox\{green\}\{yellow\}\{\\(\\bar\{\\omega\}\\)\} la durata massima di vita di un nucleo superstite\
+        \\item \\fcolorbox\{green\}\{yellow\}\{$\\omega_\{5\}=\\xi+\\bar\{\\omega\}$\} la prima et\'e0 che nessun nucleo superstite di attivo pu\'f2 raggiungere nel gruppo 5\
+        \\item \\fcolorbox\{green\}\{yellow\}\{\\(\\omega_\{6\}\\)\}\\(=\\max \\left\\\{\\omega_\{2\}, \\omega_\{3\}, \\omega_\{4\}\\right\\\}+\\bar\{\\omega\}\\) la prima et\'e0 che nessun nucleo superstite di pensionato pu\'f2 raggiungere nel gruppo 6\
+    \\end\{itemize\}\
+    \
+    \\begin\{itemize\}\
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(\{q\}_\{[\{x\}]+\{t\}\}^\{1, \{k\}\}\\)\} probabilit\'e0 che un attivo, entrato nel gruppo degli attivi all\'92et\'e0 x e rimasto in questo gruppo per t anni, transiti (o sia eliminato) nel gruppo k tra le et\'e0 x+t e x+t+1, per vecchiaia (k = 3) o per altre cause (k = 4) o per morte lasciando nucleo superstite (k = 5) o per morte senza lasciare nucleo superstite (k = 7).\
+    \
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(\{q\}_\{[\\mathrm\{y\}]+\\tau\}^\{\\mathrm\{k\}, \\mathrm\{s\}\}\\)\} probabilit\'e0 che un pensionato diretto del gruppo \\(\\mathrm\{k\}(\\mathrm\{k\}=2,3,4),\\) entrato nel gruppo all'et\'e0 y e ivi rimasto per \\(\\tau\\) anni, venga eliminato (necessariamente per morte) dal gruppo fra le et\'e0 \\(\\mathrm\{y\}+\\mathrm\{r\} \\mathrm\{e\} \\mathrm\{y\}+\\mathrm\{r\}+1\\) lasciando nucleo superstite, se \'e8 \\(\\mathrm\{s\}=6,\\) o non lasciando nucleo superstite, se \'e8 \\(\\mathrm\{s\}=7\\)\
+    \
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(\\mathrm\{q\}_\{[\\mathrm\{y\}]+\\tau\}^\{5,7\}\\)\} probabilit\'e0 che un nucleo superstite di attivo morto all'et\'e0 y, con anzianit\'e0 di pensionamento di \\(\\tau\\) anni, si estingua completamente fra le et\'e0 \\(\\mathrm\{y\}+\\tau \\mathrm\{\\, e \\,\} y+\\tau+1\\)\
+    \
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(\{q\}_\{[\{z\}]+\\eta\}^\{6,7\}\\)\} probabilit\'e0 che un nucleo superstite di pensionato morto all'et\'e0 z, con anzianit\'e0 di pensionamento di \\(\\eta\\) anni, si estingua completamente fra le et\'e0 \\(\\mathrm\{z\}+\\eta \\mathrm\{\\, e \\,\} \\mathrm\{z\}+\\eta+1\\)\
+\\end\{itemize\}\
+\
+\\subsection\{3. I numeri medi\}\
+\
+\\begin\{itemize\}\
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(\\tilde\{\\ell\}^\{1(\\mathrm\{m\})\}(\\mathrm\{x\}, \\mathrm\{t\})\\)\} numero di attivi di et\'e0 x + t all\'92epoca m, con et\'e0 d\'92ingresso nel gruppo degli attivi pari a x e antidurata t nel gruppo\
+    \
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(\\tilde\{\\ell\}^\{\\mathrm\{k\}(\\mathrm\{m\})\}(\\mathrm\{x\}, \\mathrm\{t\}, \\mathrm\{\\tau\})\\)\} numero, all\'92epoca m, di pensionati di et\'e0 x + t + \uc0\u964 , del gruppo k (per k = 2, 3, 4), o del gruppo 5 (per k = 5), con ingresso nel gruppo degli attivi all\'92et\'e0 x, permanenza in quel\
+gruppo uguale a t ($t \\leq 1$) e antidurata \uc0\u964  nel gruppo k;\
+    \
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(^\{\\mathrm\{k\}\} \\tilde\{\\ell\}^\{6(\\mathrm\{m\})\}(\\mathrm\{x\}, \\mathrm\{t\}, \\mathrm\{\\tau\}, \\eta)\\)\} numero, all'epoca \\(\\mathrm\{m\},\\) di nuclei superstiti di pensionati del gruppo \\(\\mathrm\{k\}(\\text \{ per \} \\mathrm\{k\}=\\) 2,3,4)\\(,\\) derivanti da individui entrati nel gruppo degli attivi all'et\'e0 \\(\\mathrm\{x\},\\) rimasti in quel gruppo \\(\\mathrm\{t\}\\) anni \\((\\mathrm\{con\} \\mathrm\{t\} \\geq 1),\\) entrati nel gruppo \\(\\mathrm\{k\}\\) dei pensionati diretti all'et\'e0 \\(\\mathrm\{x\}+\\mathrm\{t\},\\) morti all'et\'e0 \\(\\mathrm\{x\}+\\mathrm\{t\}+\\tau(\\mathrm\{\\tau\} \\geq 1)\\) nuclei superstiti che hanno antidurata \\(\\eta\\) nel gruppo \\(6 ;\\)\
+    \
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(\\displaystyle \\tilde\{\\ell\}^\{6(\\mathrm\{m\})\}(\\mathrm\{x\}, \\mathrm\{t\}, \\mathrm\{\\tau\}, \\eta)= \\displaystyle \\sum_\{\\mathrm\{k\}=2\}^\{4\} \\mathrm\{k\} \\tilde\{\\ell\}^\{6(\\mathrm\{m\})\}(\\mathrm\{x\}, \\mathrm\{t\}, \\mathrm\{\\tau\}, \\eta)\\)\}  numero, all\'92epoca m, di nuclei superstiti di pensionati diretti, entrati nel gruppo degli attivi all\'92et\'e0 x, rimasti in quel gruppo t anni, entrati in uno dei gruppi dei pensionati diretti all'et\'e0 \\(\\mathrm\{x\}+\\mathrm\{t\}\\) e morti all'et\'e0 \\(\\mathrm\{x\}+\\mathrm\{t\}+\\mathrm\{\\tau\},\\) aventi antidurata \\(\\eta\\) nel gruppo 6\
+\\end\{itemize\}\
+\
+\\begin\{itemize\}\
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(v_\{\\mathrm\{x\}\}^\{(\\mathrm\{m\})\}\\)\} il numero (certo) di nuovi ingressi di et\'e0 x nel Gruppo 1 degli attivi all\'92epoca m, che !\
+supporremo noto.\
+    \\item corrisponde al numero \\(v_\{\\mathrm\{x\}\}^\{1(\\mathrm\{m\})\}\\) introdotto nel capitolo 3\
+\\end\{itemize\}\
+\
+\
+%==========================\
+%CAPITOLO 5\
+%==========================\
+\\section\{Capitolo 5. Il calcolo dei salari e degli oneri\}\
+\\subsection\{1. Definizioni e ipotesi preliminari per salari e oneri individuali.\}\
+\\begin\{itemize\}\
+    \\item \\fcolorbox\{green\}\{yellow\}\{$\{s_\{t+1\}\}^\{(\\mathrm\{m\})\}$\} \'e8 un numero certo. Il \\textbf\{salario\} che viene percepito all'epoca \\(m\\) da un attivo che in quest'epoca matura anzianit\'e0 di assicurazione t,\
+\\end\{itemize\}\
+\
+\\begin\{itemize\}\
+    \\item  \\fcolorbox\{green\}\{yellow\}\{\\(\\mathrm\{r\}_\{\\mathrm\{t\}\}^\{(\\mathrm\{m\})\}\\)\} l'importo della \\textbf\{pensione\} spettante all'epoca \\(\\mathrm\{m\}\\) ad un pensionato diretto che deriva da un attivo che al momento del pensionamento ha maturato una anzianit\'e0 lavorativa di t anni.\
+\\end\{itemize\}\
+\
+\\begin\{itemize\}\
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(\\psi(\\mathrm\{y\}+\\mathrm\{k\}, \\mathrm\{k\})\\)\} l'\\textbf\{aliquota media\} spettante al nucleo familiare superstite di un assicurato o di un pensionato morto in et\'e0 y dopo k anni dalla morte, della pensione a cui avrebbe avuto diritto l'assicurato deceduto o di cui godeva il pensionato deceduto; di norma \'e8 \\(0<\\psi(\\mathrm\{y\}+\\mathrm\{k\}, \\mathrm\{k\}) \\leq 1\\).\
+\\end\{itemize\}\
+\
+\\subsection\{2. Salari e oneri collettivi\}\
+\\paragraph\{2.2.3 Passiamo agli oneri -  CASINO IN CLASSIFCA SIMBOLI, DA SISTEMARE SU FILE APPUNTI\}\
+\
+\\begin\{itemize\}\
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(\\bar\{\\Theta\}^\{(\\mathrm\{m\})\}\\)\} il valore medio dell\'92ammontare degli oneri da erogare all\'92epoca m ai pensionati.\
+    \
+    \\item    \\fcolorbox\{green\}\{yellow\}\{\\(\\bar\{\\Theta\}_x^\{(\\mathrm\{m\})\}= \\displaystyle \\sum_\{\\mathrm\{x\}=\\alpha\}^\{\\xi-1\} \\bar\{\\Theta\}_\{\\mathrm\{x\}\}^\{(\\mathrm\{m\})\}\\)\}\
+    il valore medio dell\'92ammontare degli oneri da erogare all\'92epoca m ai pensionati che derivano da attivi entrati in assicurazione all\'92et\'e0 x.\
+\\end\{itemize\}\
+\\begin\{itemize\}\
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(^\{\\mathrm\{k\}\} \\overline\{\\Theta\}_\{\\mathrm\{x\}\}^\{(\\mathrm\{m\})\}=\\displaystyle \\displaystyle  \\displaystyle \\sum_\{\\mathrm\{t\}=1\}^\{\\xi-\\mathrm\{x\}\} \\displaystyle  \\displaystyle \\sum_\{\\mathrm\{\\tau\}=0\}^\{\\omega_\{\\mathrm\{k\}\}-1-(\\mathrm\{x\}+\\mathrm\{t\})\} ^\{\\mathrm\{k\}\} \\overline\{\\Theta\}_\{\\mathrm\{x\}, \\mathrm\{r\}, \\mathrm\{r\}\}^\{(\\mathrm\{m\})\}\\)\}\
+    \'e8 il valore medio del totale degli oneri dell\'92epoca m per le pensioni del gruppo k dei pensionati, per k = 2, 3, 4, 5 (quindi per pensioni dirette se k = 2, 3, 4, ed indirette se k = 5), relativi a individui entrati in assicurazione all\'92et\'e0 x. \\\\\
+    \
+    Dove:\
+        \\item  \\fcolorbox\{green\}\{yellow\}\{\\( \\displaystyle ^\{\\mathrm\{k\}\}\\bar\{\\Theta\}_\{\\mathrm\{x\}, \\mathrm\{t\}, \\mathrm\{r\}\}^\{(\\mathrm\{m\})\}\\)\}\
+         per k = 2, 3, 4, sia il valore medio, rispettivamente, del totale degli oneri dell\'92epoca m per le pensioni di invalidit\'e0, di vecchiaia e per altre cause relative a pensionati che all\'92epoca m hanno anzianit\'e0 di pensionamento \uc0\u964 , hanno maturato anzianit\'e0 lavorativa t e sono entrati in assicurazione all\'92et\'e0 x, per k = 5 sia il valore medio del totale degli oneri dell\'92epoca m per le pensioni ai nuclei superstiti di attivi che all\'92epoca m hanno anzianit\'e0 di pensionamento $\\tau$, derivanti da attivi entrati in assicurazione all\'92et\'e0 x e con anzianit\'e0 lavorativa t;\
+         \
+         \\item \\fcolorbox\{green\}\{yellow\}\{\\(^\{(\\mathrm\{k\}, 6)\}\\bar\{\\Theta\}_\{\\mathrm\{x\}, \\mathrm\{t\}, \\tau, \\eta\}^\{(\\mathrm\{m\})\}\\)\} per k = 2, 3, 4, sia il valore medio del totale degli oneri dell\'92epoca m per le pensioni ai nuclei superstiti di pensionati che all'epoca m hanno anzianit\'e0 di pensionamento \\(\\eta\\) derivanti da attivi entrati in assicurazione all'et\'e0 x, hanno maturato anzianit\'e0 lavorativa t, che sono stati in pensione nel gruppo k per \\(\\tau\\) anni e poi sono deceduti.\
+         \\end\{itemize\}\
+         \
+\\begin\{itemize\}\
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(^\{(\\mathrm\{k\}, 6)\} \\overline\{\\Theta\}_\{\\mathrm\{x\}\}^\{(\\mathrm\{m\})\}=\\displaystyle \\displaystyle  \\displaystyle \\sum_\{\\mathrm\{t\}=1\}^\{\\xi-\\mathrm\{x\}\} \\displaystyle  \\displaystyle \\sum_\{\\mathrm\{\\tau\}=1\}^\{\\omega_\{\\mathrm\{k\}\}-\\mathrm\{x\}-\\mathrm\{t\} \\omega_\{6\}-1-\\mathrm\{x\}-\\mathrm\{t\}-\\tau\} \\quad \\displaystyle  \\displaystyle \\sum_\{\\eta=0\}^\{(\\mathrm\{k\}, 6)\} \\overline\{\\Theta\}_\{\\mathrm\{x\}, \\mathrm\{r\}, \\mathrm\{r\}, \\eta\}^\{(\\mathrm\{m\})\}\\)\}  il valore medio dell\'92ammontare degli oneri relativi ai nuclei superstiti di pensionati all\'92epoca m (pensioni di reversibilit\'e0), derivanti da attivi entrati in assicurazione all\'92et\'e0 x, per k = 2, 3, 4,.\\\\\
+    \
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(\\bar\{\\Theta\}_\{\\mathrm\{x\}\}^\{(\\mathrm\{m\})\}= \\displaystyle \\sum_\{\\mathrm\{k\}=2\}^\{4\} ^\{\\mathrm\{k\}\} \\bar\{\\Theta\}_\{\\mathrm\{x\}\}^\{(\\mathrm\{m\})\}+^\{5\} \\bar\{\\Theta\}_\{\\mathrm\{x\}\}^\{(\\mathrm\{m\})\}+ \\displaystyle \\sum_\{\\mathrm\{k\}=2\}^\{4\} ^\{(\\mathrm\{k\}, 6)\}\\bar\{\\Theta\}_\{\\mathrm\{x\}\}^\{(\\mathrm\{m\})\}\\)\} \'e8 il valore medio degli oneri dell\'92epoca m per tutte le pensioni relative a individui entrati in assicurazione all\'92et\'e0 x\
+\\end\{itemize\}\
+\
+\
+\
+\\begin\{itemize\}\
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(\\Theta_\{\\mathrm\{x\}\}^\{(\\mathrm\{m\})\}\\)\} il valore attuale medio all\'92epoca m del flusso degli oneri da erogare ai nuovi pensionati diretti o indiretti dell\'92epoca m derivanti da attivi entrati in assicurazione all\'92et\'e0 x, e ai loro superstiti, a partire dall\'92epoca m e fino alla loro estinzione,\
+    \
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(\\Theta^\{(\\mathrm\{m\})\}= \\displaystyle \\sum_\{\\mathrm\{x\}=\\alpha\}^\{\\xi-1\} \\Theta_\{\\mathrm\{x\}\}^\{(\\mathrm\{m\})\}\\)\} oppure anche il valore attuale medio all\'92epoca m del flusso degli oneri da erogare ai nuovi pensionati diretti o indiretti dell\'92epoca m, e ai loro superstiti, a partire dall\'92epoca m e fino alla loro estinzione.\
+    \
+    Oppure\
+    \\(\\Theta^\{(\\mathrm\{m\})\}=\\displaystyle \\displaystyle  \\displaystyle \\sum_\{\\mathrm\{s\}=0\}^\{\\omega_\{6\}-1-(\\alpha+1\\\}\} \\mathrm\{s\}^\{-(\\mathrm\{m\}+\\mathrm\{s\})\} \\mathrm\{v\}^\{\\mathrm\{s\}\}\\) (vd sotto) \
+    \
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(^\{\\mathrm\{k\}\}\{\\Theta\}_\{\\mathrm\{x\}\}^\{(\\mathrm\{m\})\}\\)\} il valore attuale medio all\'92epoca m del flusso delle pensioni che verranno erogate ai nuovi pensionati diretti del gruppo k dell\'92epoca m, per k = 2, 3, 4, e ai nuovi nuclei superstiti di attivo dell\'92epoca m, per k = 5, che derivano da attivi entrati in assicurazione all\'92et\'e0 x\
+    \
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(^\{(\\mathrm\{k\}, 6)\}\{\\Theta_\{\\mathrm\{X\}\}\}^\{(\\mathrm\{m\})\}\\)\} per k = 2, 3, 4, il valore attuale medio all\'92epoca m del flusso delle pensioni che verranno erogate ai nuclei superstiti (di pensionato) dei nuovi pensionati diretti del gruppo k dell\'92epoca m, che derivano da attivi che sono entrati in assicurazione all\'92et\'e0 x,\
+    \
+\
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(\\Theta^\{(\\mathrm\{m\})\}= \\displaystyle \\displaystyle  \\displaystyle \\sum_\{\\mathrm\{s\}=0\}^\{\\omega_\{6\}-1-(\\alpha+1\\\}\} \\mathrm\{s\}^\{-(\\mathrm\{m\}+\\mathrm\{s\})\} \\mathrm\{v\}^\{\\mathrm\{s\}\}\\)\}\
+\\end\{itemize\}\
+\\subsection\{3. Valori medi di salari e oneri in ipotesi semplificatrici (pg 72 quaderno).\}\
+\
+%==========================\
+%CAPITOLO 6\
+%==========================\
+\\section\{Capitolo 6. I coefficienti di capitalizzazione\}\
+\\begin\{itemize\}\
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(^\{\\mathrm\{a\}\}\{q\}_\{\\mathrm\{x\}\}\\)\} la probabilit\'e0 di eliminazione di un attivo per qualunque causa tra le et\'e0 \\(x\\) e \\(x+1\\)\
+    \\item \\fcolorbox\{green\}\{yellow\}\{$^\{a\}q_\{x\}^\{i\}$ \} probabilit\'e0 di eliminazione di un attivo per invalidit\'e0\
+    \\item \\fcolorbox\{green\}\{yellow\}\{$^\{a\}q_\{x\}^\{v\}$\} probabilit\'e0 di eliminazione di un attivo per vecchiaia\
+    \\item \\fcolorbox\{green\}\{yellow\}\{$^\{a\}q_\{x\}^\{w\}$\} probabilit\'e0 di eliminazione di un attivo per altre cause\
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(^\{a\} q_\{x\}^\{d\}\\)\} le probabilit\'e0 di eliminazione di un attivo per morte tra le et\'e0 x e \\(x+1\\)\
+\\end\{itemize\}\
+\
+\\begin\{itemize\}\
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(^\{a\}p_\{x\}\\) \} probabilit\'e0 di permanenza nella collettivit\'e0 degli attivi dall\'92et\'e0 x almeno per un anno\
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(^\{a\} _t p_\{x\}\\)\} probabilit\'e0 di permanenza nella collettivit\'e0 degli attivi dall\'92et\'e0 per \\(\\mathrm\{t\}\\) anni, con \\(1 \\leq \\mathrm\{t\} \\leq \\xi-\\mathrm\{x\}\\) \
+\\end\{itemize\}\
+\
+\
+\\begin\{itemize\}\
+    \\item \\fcolorbox\{green\}\{yellow\}\{$^\{\\mathrm\{F\}\} \\mathrm\{p\}_\{[\\mathrm\{y\}]+\\tau\}$\} probabilit\'e0 di sopravvivenza per almeno m anni di un nucleo superstite di attivo di \'93et\'e0\'94 y + \uc0\u964  e anzianit\'e0 $\\tau$\
+    \
+    \\item \\fcolorbox\{green\}\{yellow\}\{$_\{\\mathrm\{m\}\}^\{\\mathrm\{F\}\}\\mathrm\{p\}_\{[\\mathrm\{y\}]+\\tau\}$\} probabilit\'e0 di sopravvivenza per almeno m anni di un nucleo superstite di attivo di \'93et\'e0\'94 y + $\\tau$ e anzianit\'e0 $\\\uc0\u964 au$ \
+    \
+    \\item \\fcolorbox\{green\}\{yellow\}\{$^\{\\mathrm\{f\}\} \\mathrm\{p\}_\{[\\mathrm\{z\}]+\\eta\}$\}  di un nucleo superstite di pensionato di \'93et\'e0\'94 $z+ \\tau$\
+    \
+    \\item \\fcolorbox\{green\}\{yellow\}\{$_\{\\mathrm\{m\}\}^\{\\mathrm\{f\}\} \\mathrm\{p\}_\{[\\mathrm\{z\}]+\\eta\}$\} probabilit\'e0 di sopravvivenza di un nucleo superstite di pensionato di anzianit\'e0 $\\eta$\
+\\end\{itemize\} \
+\
+\\begin\{itemize\}\
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(\\left\\\{\\ell_\{\\mathrm\{x\}\}^\{\\mathrm\{a\}\}\\right. \\)\\\}\} \\textbf\{tavola di attivit\'e0\}\
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(\\ell_\{\{X\}\}^\{\{a\}\}\\)\} generico elemento della tavola di mortalit\'e0\
+\\end\{itemize\}\
+\
+\\subsection\{2. Valori medi di salari\}\
+\\begin\{itemize\}\
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(\\ddot\{\\mathrm\{a\}\}_\{\\mathrm\{x\}\}^\{(\\mathrm\{a\})\}(\\mathrm\{s\})\\)\}\\(= \\displaystyle \\sum_\{\\mathrm\{t\}=0\}^\{\\xi-1-\\mathrm\{x\}\} \\displaystyle \\frac\{\\ell_\{\\mathrm\{x\}+\\mathrm\{t\}\}^\{\\mathrm\{a\}\}\}\{\\ell_\{\\mathrm\{x\}\}^\{\\mathrm\{a\}\}\} \\displaystyle \\frac\{\\mathrm\{s\}_\{\\mathrm\{t\}+1\}\}\{\\mathrm\{s\}_\{1\}\} \\mathrm\{v\}^\{\\mathrm\{t\}\}\\) il valore attuale medio dei salari annui anticipati, per unit\'e0 di salario iniziale ($s_1$ del primo anno), che un individuo entrato in assicurazione all\'92et\'e0 x percepir\'e0 per tutto il periodo della sua attivit\'e0 lavorativa.\
+\\end\{itemize\}\
+\
+\\subsection\{3. Coefficienti di capitalizzazione relativi agli oneri.\}\
+\
+\\begin\{itemize\}\
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(\\ddot\{\\mathrm\{a\}\}_\{[\\mathrm\{y\}]\}^\{(\\mathrm\{i\})\}\\)\} \\(= \\displaystyle \\sum_\{\\mathrm\{\\tau\}=0\}^\{\\omega_\{2\}-1-\\mathrm\{y\}\} \\displaystyle \\frac\{\\ell_\{[\\mathrm\{y\}]+\\tau\}^\{\\mathrm\{i\}\}\}\{\\ell_\{[\\mathrm\{y\}]\}^\{\\mathrm\{i\}\}\} \\mathrm\{v\}^\{\\tau\}\\) \
+    \
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(\\ddot\{\\mathrm\{a\}\}_\{\\mathrm\{y\}\}^\{(\\mathrm\{v\})\}\\) \} \\(= \\displaystyle \\sum_\{\\mathrm\{\\tau\}=0\}^\{\\omega_\{3\}-1-\\mathrm\{y\}\} \\displaystyle \\frac\{\\ell_\{\\mathrm\{y\}+\\tau\}^\{\\mathrm\{v\}\}\}\{\\ell_\{\\mathrm\{y\}\}^\{\\mathrm\{v\}\}\} \\mathrm\{v\}^\{\\mathrm\{t\}\}\\)  Analogo al caso dell\'92annualit\'e0 vitalizia su testa di invalido \'e8 quello della \\textbf\{annualit\'e0 vitalizia su testa di vecchio\} data dal seguente valore attuale medio\
+\
+\\item \\fcolorbox\{green\}\{yellow\}\{\\(\\ddot\{\\mathrm\{a\}\}_\{\\mathrm\{x\}\}^\{(\\mathrm\{ai\})\}(\\mathrm\{r\})\\)\} \\(= \\displaystyle \\sum_\{\\mathrm\{t\}=1\}^\{\\xi-\\mathrm\{x\}\} \\displaystyle \\frac\{\\ell_\{\\mathrm\{x\}+\\mathrm\{t\}-1\}^\{\\mathrm\{a\}\}\}\{\\ell_\{\\mathrm\{x\}\}^\{\\mathrm\{a\}\}\}\\) a \\(\\mathrm\{q\}_\{\\mathrm\{x\}+\\mathrm\{t\}-1\}^\{\\mathrm\{i\}\} \\displaystyle \\frac\{\\mathrm\{r\}_\{\\mathrm\{t\}\}\}\{\\mathrm\{s\}_\{1\}\} \\mathrm\{v\}^\{\\mathrm\{t\}\} \\ddot\{\\mathrm\{a\}\}_\{\\mathrm\{x\}+\\mathrm\{t\}\}^\{(\\mathrm\{i\})\}\\) Questo coefficiente di capitalizzazione rappresenta il valore attuale medio degli oneri relativi ad un pensionato di invalidit\'e0, che deriva da un individuo entrato in assicurazione all\'92et\'e0 x, per unit\'e0 del salario percepito all\'92epoca d\'92ingresso in assicurazione se la probabilit\'e0 di eliminazione per invalidit\'e0 di un attivo non dipende dall\'92et\'e0 di ingresso nel gruppo ma solo dall\'92et\'e0 raggiunta x + t - 1\
+\
+\\item \\fcolorbox\{green\}\{yellow\}\{\\(\\ddot\{\\mathrm\{a\}\}_\{\\mathrm\{x\}\}^\{(\\mathrm\{av\})\}(\\mathrm\{r\})\\)\} \\(=\\displaystyle \\frac\{\\ell_\{\\xi-1\}^\{\\mathrm\{a\}\}\}\{\\ell_\{\\mathrm\{x\}\}^\{\\mathrm\{a\}\}\} \\,  ^\{\\mathrm\{a\}\}\\mathrm\{q\}_\{\\xi-1\}^\{\\mathrm\{v\}\} \\displaystyle \\frac\{\\mathrm\{r_\{\\xi-\\mathrm\{x\}\}\}\}\{\\mathrm\{s\}_\{1\}\} \\mathrm\{v\}^\{\\xi-\\mathrm\{x\}\} \\ddot\{\\mathrm\{a\}\}_\{\\xi\}^\{(\\mathrm\{v\})\}\\)  Analogamente il valore attuale medio degli oneri relativi ad un pensionato di vecchiaia, che deriva da un individuo entrato in assicurazione all\'92et\'e0 x, per unit\'e0 del salario percepito all\'92epoca d\'92ingresso in assicurazione\
+\
+\\item \\fcolorbox\{green\}\{yellow\}\{\\(\\ddot\{\\mathrm\{a\}\}_\{[\\mathrm\{y\}]\}^\{(\\mathrm\{F\})\}(\\psi)\\)\}\\(= \\displaystyle \\sum_\{\\mathrm\{\\tau\}=0\}^\{\\omega_\{5\}-1-\\mathrm\{y\}\} \\displaystyle \\frac\{\\ell_\{[\\mathrm\{y\}]+\\mathrm\{r\}\}^\{\\mathrm\{F\}\}\}\{\\ell_\{[\\mathrm\{y\}]\}^\{\\mathrm\{F\}\}\} \\psi(\\mathrm\{y\}+\\tau, \\tau) \\mathrm\{v\}^\{\\tau\}\\)  \\textbf\{annualit\'e0 di famiglia\}: con ci\'f2 si intende il \\textit\{valore attuale medio\}, riferito all\'92et\'e0 y della morte di un assicurato che lasci nucleo superstite, \\textit\{della rendita unitaria di pensione ad esso erogata annualmente e anticipatamente\}\
+\
+\\item \\fcolorbox\{green\}\{yellow\}\{\\(\\ddot\{\\mathfrak\{a\}\}_\{[\\mathrm\{z\}]\}^\{(\\mathrm\{f\})\}(\\psi)\\)\}\\(= \\displaystyle \\sum_\{\\mathfrak\{\\eta\}=0\}^\{\\omega_\{6\}-1-z\} \\displaystyle \\frac\{\\ell_\{[\\mathrm\{z\}]+\\eta\}^\{\\mathrm\{f\}\}\}\{\\ell_\{[\\mathrm\{z\}]\}^\{\\mathrm\{f\}\}\} \\psi(\\mathrm\{z\}+\\eta, \\eta) \\mathrm\{v\}^\{\\eta\}\\) Allo stesso modo, \\textbf\{annualit\'e0 di famiglia\}, si chiama il valore attuale medio, riferito all\'92et\'e0 z di morte di un pensionato diretto che lasci famiglia (nucleo superstite), della rendita unitaria di pensione erogata alla famiglia stessa, annualmente e anticipatamente.\
+\
+\\item \\fcolorbox\{green\}\{yellow\}\{\\(\\ddot\{\\mathrm\{a\}\}_\{\\mathrm\{x\}\}^\{(\\mathrm\{aF\})\}(\\mathrm\{r\})\\)\} \\(= \\displaystyle \\sum_\{\\mathrm\{t\}=1\}^\{\\xi-\\mathrm\{x\}\} \\displaystyle \\frac\{\\ell_\{\\mathrm\{x\}+\\mathrm\{t\}-1\}^\{\\mathrm\{a\}\}\}\{\\ell_\{\\mathrm\{x\}\}^\{\\mathrm\{a\}\}\}\\, ^\{\\mathrm\{a\}\}\\mathrm\{q\}_\{\\mathrm\{x\}+\\mathrm\{t\}-1\}^\{\\mathrm\{d\} \\mathrm\{F\}\} \\displaystyle \\frac\{\\mathrm\{r\}_\{\\mathrm\{t\}\}\}\{\\mathrm\{s\}_\{1\}\} \\mathrm\{v\}^\{\\mathrm\{t\}\} \\ddot\{\\mathrm\{a\}\}_\{[\\mathrm\{x\}+\\mathrm\{t\}]\}^\{(\\mathrm\{F\})\}(\\psi)\\) Con le solite precisazioni, il valore attuale medio degli oneri relativi al nucleo superstite di un assicurato che x + 1 deriva da un individuo entrato in assicurazione all\'92et\'e0 x,\\textit\{ per unit\'e0 del salario percepito\} all\'92epoca d\'92ingresso in assicurazione. Dove, \\\\ in cui \\(^\{\\mathrm\{a\}\} \\mathrm\{q\}_\{\\mathrm\{x\}+\\mathrm\{t\}-1\}^\{\\mathrm\{dF\}\}\\) \'e8 la probabilit\'e0 che un attivo venga eliminato per morte tra le et\'e0 \\(\\mathrm\{x\}+\\mathrm\{t\}-1 \\mathrm\{e\} \\mathrm\{x\}+\\mathrm\{t\}\\)\
+lasciando nucleo superstite.in cui \\(^\{\\mathrm\{a\}\} \\mathrm\{q\}_\{\\mathrm\{x\}+\\mathrm\{t\}-1\}^\{\\mathrm\{dF\}\}\\) \'e8 la probabilit\'e0 che un attivo venga eliminato per morte tra le et\'e0 \\(\\mathrm\{x\}+\\mathrm\{t\}-1 \\mathrm\{e\} \\mathrm\{x\}+\\mathrm\{t\}\\)\
+lasciando nucleo superstite.\
+\
+\\item \\fcolorbox\{green\}\{yellow\}\{\\(\\ddot\{\\mathrm\{a\}\}_\{[\\mathrm\{y\}]\}^\{(\\mathrm\{if\})\}(\\psi)\\)\} \\(= \\displaystyle \\sum_\{\\tau=1\}^\{\\omega_\{2\}-\\mathrm\{y\}\} \\displaystyle \\frac\{\\ell_\{[\\mathrm\{y\}]+\\tau-1\}^\{\\mathrm\{i\}\}\}\{\\ell_\{[\\mathrm\{y\}]\}^\{1\}\}\
+\\, ^\{\\mathrm\{i\}\}\\mathrm\{q\}_\{[\\mathrm\{y\}]+\\tau-1\}^\{\\mathrm\{df\}\} \\mathrm\{v\}^\{\\tau\} \\ddot\{\\mathrm\{a\}\}_\{[\\mathrm\{y\}+\\tau]\}^\{(\\mathrm\{f\})\}(\\psi)\\) \'e8 l'\\textbf\{assicurazione di famiglia riferita ad un invalido\} (Come nel caso delle annualit\'e0 di famiglia si fa riferimento ad una rendita unitaria di pensione.)\\\\ Essa fornisce il valore attuale medio degli oneri relativi al nucleo superstite di un pensionato di\
+invalidit\'e0, entrato nel gruppo degli invalidi all'et\'e0 y, essendo \\(^\{\\mathrm\{i\}\} \\mathrm\{q\}_\{[\\mathrm\{y\}]+\\tau-1\}^\{\\mathrm\{d\} f\}\\) la probabilit\'e0 che un\
+pensionato di invalidit\'e0 muoia fra l'et\'e0 \\(\\mathrm\{y\}+\\tau-1\\) e \\(\\mathrm\{y\}+\\tau\\) lasciando famiglia.\
+\
+\\item \\fcolorbox\{green\}\{yellow\}\{\\(\\ddot\{\\mathrm\{a\}\}_\{\\mathrm\{y\}\}^\{(\\mathrm\{vf\})\}(\\psi)\\)\}\\(= \\displaystyle \\sum_\{\\mathrm\{\\tau\}=1\}^\{\\omega_\{3\}-\\mathrm\{y\}\} \\displaystyle \\frac\{\\ell_\{\\mathrm\{y\}+\\tau-1\}^\{\\mathrm\{v\}\}\}\{\\ell_\{\\mathrm\{y\}\}^\{\\mathrm\{v\}\}\}^\{\\mathrm\{v\}\} \\mathrm\{q\}_\{\\mathrm\{y\}+\\tau-1\}^\{\\mathrm\{df\}\} \\mathrm\{v\}^\{\\mathrm\{\\tau\}\} \\dot\{\\mathrm\{a\}\}_\{\\mathrm\{y\}+\\mathrm\{r\}\}^\{(\\mathrm\{f\})\}(\\psi)\\) Analogamente definiamo l'\\textbf\{assicurazione di famiglia riferita ad un vecchio\} (anche qui si fa riferimento ad una rendita unitaria di pensione) \
+che fornisce il valore attuale medio degli oneri relativi al nucleo superstite di un pensionato di vecchiaia di et\'e0 y.\
+\
+\\item \
+Con procedimento del tutto analogo a quello che ha condotto alla annualit\'e0 di famiglia si ricavano infine le espressioni del valore attuale medio degli oneri per \\textit\{pensioni di reversibilit\'e0 relativi ad un attivo di et\'e0 x che diventi invalido\} all\'92et\'e0 x+t e del valore attuale medio degli oneri per \\textit\{pensioni di reversibilit\'e0 relativi ad un attivo di et\'e0 x che diventi pensionato di vecchiaia all\'92et\'e0 x + t\}.\
+\\end\{itemize\}\
+\
+\
+\
+%==========================\
+%CAPITOLO 7\
+\\section\{Capitolo 7. Sistemi finanziari di gestione e calcolo dei premi.\}\
+\
+\\begin\{itemize\}\
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(\\overline\{\\mathcal\{P\}\}^\{(\\mathrm\{m\})\}\\)\} il premio in questo sistema finanziario di gestione, che chiameremo \\textit\{premio di ripartizione pura\} per l'anno di gestione \\((\\mathrm\{m\}, \\mathrm\{m\}+1) .\\)\
+    \
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(\\mathcal\{S\}^\{(\\mathrm\{m\})\}\\)\} il valore dell'ammontare dei salari che percepiscono gli attivi all'epoca m (numero erto, diversamente dal significato definito nel capitolo 5) \
+\\end\{itemize\}\
+\
+ \\begin\{itemize\}\
+     \\item \\fcolorbox\{green\}\{yellow\}\{ \\(\\mathcal\{P\}^\{(\\mathrm\{m\})\}\\)\} il premio secondo questo sistema finanziario di gestione, che chiameremo pr\\textit\{emio di copertura dei capitali\}, all\'92epoca m, si ha\
+     \\(\\mathrm\{C\}_\{\\mathrm\{m\}\}=\\mathcal\{P\}^\{(\\mathrm\{m\})\} \\mathcal\{S\}^\{(\\mathrm\{m\})\}\\)\
+ \\end\{itemize\}\
+ \
+ \\begin\{itemize\}\
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(\\mathrm\{P\}_\{\\mathrm\{x\}\}^\{(\\mathrm\{m\})\}\\)\}\\(=  \\displaystyle \\frac\{\\mathrm\{O\}_\{\\mathrm\{x\}\}^\{(\\mathrm\{m\})\}\}\{\\mathrm\{S\}_\{\\mathrm\{x\}\}^\{(\\mathrm\{m\})\}\}\\) \'e8 il premio individuale di ciascuno degli attivi\
+\\end\{itemize\}\
+\
+\\subsection\{4. Una osservazione finale: Crisi ripartizione pura\}\
+\\begin\{itemize\}\
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(\\mathrm\{N\}\\)\} il numero di pensionati\
+    \\item  \\fcolorbox\{green\}\{yellow\}\{\\(\\mathrm\{r\}\\)\} la pensione media percepita da un pensionato\
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(\\mathrm\{A\}\\)\}  il numero dei lavoratori attivi\
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(\\mathrm\{s\}\\)\} il salario medio percepito da un attivo.\
+\\end\{itemize\}\
+\
+\\begin\{itemize\}\
+    \\item  \\fcolorbox\{green\}\{yellow\}\{ \\(\\mathrm\{P\}\\)\}\\(=\\displaystyle \\frac\{\\mathrm\{r\}\}\{\\mathrm\{s\}\} \\displaystyle \\frac\{N\}\{A\}\\) \'e8 il premio pagato da un attivo secondo il sistema della ripartizione pura\
+\\end\{itemize\}\
+\
+\\section\{Capitolo 8: Le riserve\}\
+\\subsection\{1. Generalit\'e0.\}\
+\\begin\{itemize\}\
+    \\item \\fcolorbox\{green\}\{yellow\}\{ \\(\\mathrm\{V\}_\{\\mathrm\{m\}\}\\)\}\\(= \\displaystyle \\sum_\{\\mathrm\{r\}=\\mathrm\{m\}\}^\{\\infty\} 0_\{\\mathrm\{r\}\} \\mathrm\{v\}^\{\\mathrm\{r\}-\\mathrm\{m\}\}- \\displaystyle \\sum_\{\\mathrm\{r\}=\\mathrm\{m\}\}^\{\\infty\} \\mathrm\{C\}_\{\\mathrm\{r\}\} \\mathrm\{v\}^\{\\mathrm\{r\}-\\mathrm\{m\}\}= \\displaystyle \\sum_\{\\mathrm\{r\}=\\mathrm\{m\}\}^\{\\infty\}\\left(\\mathrm\{O\}_\{\\mathrm\{r\}\}-\\mathrm\{C\}_\{\\mathrm\{r\}\}\\right) \\mathrm\{v\}^\{\\mathrm\{r\}-\\mathrm\{m\}\}\\) \\textbf\{Riserva matematica prospettiva\} all\'92epoca m \'e8 data dalla differenza fra il valore attuale medio all\'92epoca m delle prestazioni1 che verranno erogate dal fondo dall\'92epoca m in poi e il valore attuale medio all\'92epoca m dei contributi che verranno pagati al fondo dall\'92epoca m in poi.\
+\\end\{itemize\}\
+\
+\\begin\{itemize\} \
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(\\mathrm\{V\}_\{\\mathrm\{m\}\}^\{\\mathrm\{a\}\}\\)\} la \\textbf\{riserva prospettiva degli attivi\}, detta anche \\textbf\{riserva per gli oneri latenti\}, o riserva premi, \
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(\\mathrm\{V\}_\{\\mathrm\{m\}\}^\{\\mathrm\{P\}\}\\)\}  la \\textbf\{riserva prospettiva dei pensionati\}, detta anche \\textbf\{riserva per gli oneri maturati\},\
+\\end\{itemize\}\
+\
+\\subsection\{2. Le riserve nei sistemi a capitalizzazione.\}\
+\\begin\{itemize\}\
+    \\item  \\fcolorbox\{green\}\{yellow\}\{\\(^\{\\mathrm\{p\}\} \\mathrm\{V\}_\{\\mathrm\{m\}\}^\{\\mathrm\{a\}\}\\)\} la riserva prospettiva degli assicurati presenti\
+    \\item  \\fcolorbox\{green\}\{yellow\}\{\\(^\{\\mathrm\{f\}\} \\mathrm\{V\}_\{\\mathrm\{m\}\}^\{\\mathrm\{a\}\}\\)\} la riserva prospettiva degli assicurati futuri\
+\\end\{itemize\}\
+\
+\\begin\{itemize\}\
+    \\item [(a)] considerando anno per anno a partire dall'epoca m l\'92ammontare complessivo dei contributi versati e quello delle pensioni erogate e con questi dati determinando la riserva\
+    \\begin\{itemize\}\
+        \\item [(i)] il sistema finanziario \'e8 quello del premio individuale; \\fcolorbox\{green\}\{yellow\}\{\\(_\{\\mathrm\{I\}\} \\mathrm\{C\}_\{\\mathrm\{r\}\}\\)\}\\(= \\displaystyle \\sum_\{\\mathrm\{t\}=0\}^\{\\min \\\{\\mathrm\{r\}, \\xi-1-\\alpha\\\}\} \\displaystyle  \\displaystyle \\sum_\{\\mathrm\{x\}=\\alpha\}^\{\\xi-1-\\mathrm\{t\}\} \\mathrm\{P\}_\{\\mathrm\{x\}\}^\{(\\mathrm\{r\}-\\mathrm\{t\})\} \\mathcal\{S\}_\{\\mathrm\{x\}, \\mathrm\{t\}\}^\{(\\mathrm\{r\})\}\\)\
+        \
+        \\item [(ii)] l sistema finanziario \'e8 quello del premio per generazioni; \\fcolorbox\{green\}\{yellow\}\{\\(_\{G\} C_\{r\}\\)\}\\(= \\displaystyle \\sum_\{t=0\}^\{\\min \\left\\\{r_\{r\}, \\xi-1-\\alpha\\right\\\}\} P^\{(r-t)\} \\displaystyle  \\displaystyle \\sum_\{x=\\alpha\}^\{\\xi-1-t\} \\delta_\{x, t\}^\{(r)\}\\)\
+        \
+        \\item [(iii)] il sistema finanziario \'e8 quello del premio medio generale. \\fcolorbox\{green\}\{yellow\}\{ \\(\\mathrm\{C\}_\{\\mathrm\{r\}\}(\\mathrm\{P\})\\)\}\\(=\\mathrm\{P\}   \\displaystyle \\sum_\{\\mathrm\{t\}=0\}^\{\\min \\\{\\mathrm\{r\}, \\xi-1-\\alpha\\\}\} \\displaystyle  \\displaystyle \\sum_\{\\mathrm\{x\}=\\alpha\}^\{\\xi-1-\\mathrm\{t\}\} \\mathcal\{S\}_\{\\mathrm\{x\}, \\mathrm\{t\}\}^\{(\\mathrm\{r\})\}=\\mathrm\{P\} \\mathcal\{S\}^\{(\\mathrm\{r\})\}\\)\
+    \\end\{itemize\}\
+    \
+    \\item [(b)] considerando la collettivit\'e0 degli assicurati presenti all'epoca m, che chiamiamo \\textit\{generazione iniziale\} di assicurati all'epoca m, e le \\textit\{generazioni successive\} di nuovi ingressi in assicurazione, valutando per ciascuna di queste generazioni la riserva all'epoca di ingresso e attualizzandone i valori all\'92epoca della valutazione.\\\\\
+    2.4.2 Passiamo ora all'espressione della riserva secondo la modalit\'e0 (b) del n. 2.4. Osserviamo che la riserva prospettiva degli assicurati presenti \\(^\{\\mathrm\{p\}\} \\mathrm\{V\}_\{\\mathrm\{m\}\}^\{\\mathrm\{a\}\}\\) \'e8 quella della generazione di assicurati che (nel n. 2.4 (b)) abbiamo chiamato generazione iniziale di assicurati all'epoca m, mentre la riserva prospettiva degli assicurati futuri \\(^\{\\mathrm\{f\}\} \\mathrm\{V\}_\{\\mathrm\{m\}\}^\{\\mathrm\{a\}\}\\) \'e8 quella delle generazioni successive di nuovi ingressi in assicurazione dopo l'epoca m.\\\\\
+    \
+    Con riferimento alla collettivit\'e0 costituita dalla coorte degli attivi di et\'e0 x + t all\'92epoca m, entrati nel gruppo degli attivi all\'92et\'e0 x, siano:\
+\\begin\{itemize\}\
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(S_\{x, t\}^\{(m)\}\\)\} il valore attuale medio, all\'92epoca m, dei salari che essa percepir\'e0 a partire dall\'92epoca m e fino al termine dell\'92attivit\'e0 lavorativa,\
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(C_\{x, t\}^\{(m)\}\\)\} il valore attuale medio dei contributi che da essa saranno versati a partire dall\'92epoca m,\
+    \
+    \\item \\fcolorbox\{green\}\{yellow\}\{\\(\\mathrm\{O\}_\{\\mathrm\{x\}, \\mathrm\{t\}\}^\{(\\mathrm\{m\})\}\\)\} il valore attuale medio, all'epoca \\(\\mathrm\{m\},\\) degli oneri relativi ad essa ed ai suoi nuclei superstiti.\
+\\end\{itemize\}\
+\\end\{itemize\}\
+\
+\\begin\{itemize\}\
+\\item [(1)] del premio medio generale: \\fcolorbox\{green\}\{yellow\}\{ \\(^\\mathrm\{p\}\{\\mathrm\{V\}\}_m^\{\\mathrm\{a\}\}(\\mathrm\{P\})\\)\}\\(= \\displaystyle \\sum_\{\\mathrm\{x\}=\\alpha\}^\{\\xi-1\} \\displaystyle  \\displaystyle \\sum_\{\\mathrm\{t\}=0\}^\{\\xi-1-\\mathrm\{x\}\}\\left(\\mathrm\{O\}_\{\\mathrm\{x\}, \\mathrm\{t\}\}^\{(\\mathrm\{m\})\}-\\mathrm\{PS\}_\{\\mathrm\{x\}, \\mathrm\{t\}\}^\{(\\mathrm\{m\})\}\\right)\\) a \\textbf\{riserva prospettiva degli assicurati presenti\}, \'e8 data dalla differenza fra il valore attuale medio degli oneri e quello dei contributi per la generazione di attivi presenti all\'92epoca m.\
+\
+\\item [(2)] del premio individuale:\\fcolorbox\{green\}\{yellow\}\{\\(_\{\\mathrm\{I\}\} \\mathrm\{V\}_\{\\mathrm\{m\}\}^\{\\mathrm\{a\}\}\\)\} \\(\
+= \\displaystyle \\sum_\{\\mathrm\{x\}=\\alpha\}^\{\\xi-1\} \\displaystyle  \\displaystyle \\sum_\{\\mathrm\{t\}=0\}^\{\\xi-1-\\mathrm\{x\}\}\\left(\\mathrm\{o\}_\{\\mathrm\{x\}, \\mathrm\{t\}\}^\{(\\mathrm\{m\})\}-\\mathrm\{P\}_\{\\mathrm\{x\}\}^\{(\\mathrm\{m\}-\\mathrm\{t\})\} \\mathrm\{S\}_\{\\mathrm\{x\}, \\mathrm\{t\}\}^\{(\\mathrm\{m\})\}\\right)\\) valore della detta riserva all\'92epoca m,\
+\\item [(3)] del premio per generazioni: \\fcolorbox\{green\}\{yellow\}\{\
+\\(_\{G\} V_\{m\}^\{a\}\\)\}\\(= \\displaystyle \\sum_\{x=\\alpha\}^\{\\xi-1\} \\displaystyle  \\displaystyle \\sum_\{t=0\}^\{\\xi-1-x\}\\left(0_\{x, t\}^\{(m)\}-P^\{(m-t)\} S_\{x, t\}^\{(m)\}\\right)\\)\
+\\end\{itemize\}\
+\
+\\subsection\{3. Riserva dei soprapremi.\}\
+\
+\\begin\{itemize\}\
+    \\item \\fcolorbox\{green\}\{yellow\}\{ \\(\\varepsilon_\{\{x\}\}^\{(\\mathrm\{k\})\}\\)\}\\(=\\mathrm\{P\}-\\mathrm\{P\}_\{\\mathrm\{x\}\}^\{(\\mathrm\{k\})\}\\)\
+    \\end\{itemize\} il soprapremio (che pu\'f2 essere negativo, nullo o positivo) rispetto al premio individuale di un individuo che entra in assicurazione con et\'e0 x all\'92epoca k. Determiniamo la corrispondente riserva dei soprapremi.\
+\
+\
+\
+\\end\{document\}\
+}
